@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AC7A18B-0E06-4D35-A3A3-BAB92FB90DE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Animator</RootNamespace>
+    <AssemblyName>Animator</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Animator</AssemblyName>
+    <RootNamespace>Animator</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Animator</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <RootNamespace>Animator</RootNamespace>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFm.Designer.cs">
+      <DependentUpon>frmAddFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddObj.Designer.cs">
+      <DependentUpon>frmAddObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAni.Designer.cs">
+      <DependentUpon>frmAni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyFm.Designer.cs">
+      <DependentUpon>frmModifyFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyObj.Designer.cs">
+      <DependentUpon>frmModifyObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyObj.ShowObjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyObj.ShowObjs.Designer.cs">
+      <DependentUpon>frmModifyObj.ShowObjs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyUsingObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyUsingObj.Designer.cs">
+      <DependentUpon>frmModifyUsingObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOption.Designer.cs">
+      <DependentUpon>frmOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpeed.Designer.cs">
+      <DependentUpon>frmSpeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFm.resx">
+      <DependentUpon>frmAddFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddObj.resx">
+      <DependentUpon>frmAddObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAni.resx">
+      <DependentUpon>frmAni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyFm.resx">
+      <DependentUpon>frmModifyFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyObj.resx">
+      <DependentUpon>frmModifyObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyObj.ShowObjs.resx">
+      <DependentUpon>frmModifyObj.ShowObjs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyUsingObj.resx">
+      <DependentUpon>frmModifyUsingObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOption.resx">
+      <DependentUpon>frmOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpeed.resx">
+      <DependentUpon>frmSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameDevAssistPack\GameDevAssistPack.csproj">
+      <Project>{CDDAFFA7-12A3-4B8E-B365-87D610591B29}</Project>
+      <Name>GameDevAssistPack</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_equalizer_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_fastforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_play_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
